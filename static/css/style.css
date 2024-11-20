@@ -1,0 +1,125 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #7799db, #2755a3);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f3f5eb;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Formulário */
+form {
+    background: rgba(238, 229, 229, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 10px rgba(133, 122, 122, 0.2);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a1616;
+}
+
+input {
+    width: calc(100% - 20px);
+    margin-top: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: #f1ecec;
+    color: #333;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Resultado */
+.resultado {
+    background: rgba(245, 237, 237, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 10px rgba(236, 231, 231, 0.2);
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    color: #e0d5d5;
+}
+
+.resultado p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #0a0a09;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    color: #fcf7f7;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    form, .resultado {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+
+

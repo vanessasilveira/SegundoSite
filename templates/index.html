@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Calculadora de Salário</title>
+</head>
+<body>
+    <h1>Olá, {{ nome }}!</h1>
+    <form method="POST">
+        <label for="salario">Salário:</label>
+        <input type="number" step="0.01" id="salario" name="salario" required>
+        <label for="beneficio">Benefícios:</label>
+        <input type="number" step="0.01" id="beneficio" name="beneficio" required>
+        <button type="submit">Calcular</button>
+    </form>
+    {% if resultado is not none %}
+    <div class="resultado">
+        <p><strong>Salário Bruto:</strong> R$ {{ salario }}</p>
+        <p><strong>Benefícios:</strong> R$ {{ beneficios }}</p>
+        <p><strong>Imposto:</strong> R$ {{ imposto }}</p>
+        <p><strong>Salário Líquido:</strong> R$ {{ resultado }}</p>
+    </div>
+    {% endif %}
+    <footer>Desenvolvido por Vanessa da Silveira</footer>
+</body>
+</html>
